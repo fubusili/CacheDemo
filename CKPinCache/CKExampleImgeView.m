@@ -29,6 +29,26 @@
         [[CKCache sharedCache] setObject:image forKey:[imageURL absoluteString]];
         
     }];
+//    CKCache *cache0 = [[CKCache sharedCache] initWithName:@"testCKTest" rootPath:[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSLocalDomainMask, YES) firstObject] ];
+//    __weak typeof(cache0) weaKCache0 = cache0;
+//    [cache0 objectForKey:[imageURL absoluteString] block:^(CKCache * _Nonnull cache, NSString * _Nonnull key, id  _Nullable object) {
+//        __strong typeof(weaKCache0) strongCache0 = weaKCache0;
+//        if (object) {
+//            [self setImageOnMainThread:(UIImage *)object];
+//            return ;
+//        }
+//        NSLog(@"cache miss, requesting %@",imageURL);
+//        NSURLResponse *response = nil;
+//        NSURLRequest *request = [NSURLRequest requestWithURL:imageURL];
+//        NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
+//        UIImage *image = [[UIImage alloc] initWithData:data scale:[[UIScreen mainScreen] scale]];
+//        [self setImageOnMainThread:image];
+//
+//        [strongCache0 setObject:image forKey:[imageURL absoluteString]];
+//        
+//    }];
+    
+
     
 }
 
